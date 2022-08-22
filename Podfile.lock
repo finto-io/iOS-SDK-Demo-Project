@@ -1,0 +1,61 @@
+PODS:
+  - dot-document (3.3.4):
+    - sam (= 2.2.0)
+  - dot-face-background-uniformity (4.10.0):
+    - dot-face-core (= 4.10.0)
+  - dot-face-core (4.10.0):
+    - iface (= 4.18.3)
+  - dot-face-detection-fast (4.10.0):
+    - dot-face-core (= 4.10.0)
+  - dot-face-eye-gaze-liveness (4.10.0):
+    - dot-face-core (= 4.10.0)
+  - dot-face-passive-liveness (4.10.0):
+    - dot-face-core (= 4.10.0)
+  - dot-face-verification (4.10.0):
+    - dot-face-core (= 4.10.0)
+  - iface (4.18.3):
+    - onnx (= 1.0.0)
+  - kyc-sdk (1.6.1):
+    - dot-document (= 3.3.4)
+    - dot-face-background-uniformity (= 4.10.0)
+    - dot-face-detection-fast (= 4.10.0)
+    - dot-face-eye-gaze-liveness (= 4.10.0)
+    - dot-face-passive-liveness (= 4.10.0)
+    - dot-face-verification (= 4.10.0)
+  - onnx (1.0.0)
+  - sam (2.2.0)
+
+DEPENDENCIES:
+  - kyc-sdk (>= 1.6.1)
+
+SPEC REPOS:
+  https://github.com/innovatrics/innovatrics-podspecs:
+    - dot-document
+    - dot-face-background-uniformity
+    - dot-face-core
+    - dot-face-detection-fast
+    - dot-face-eye-gaze-liveness
+    - dot-face-passive-liveness
+    - dot-face-verification
+    - iface
+    - onnx
+    - sam
+  https://github.com/vladyslav-shkoda/sdk-kyc-podspecs.git:
+    - kyc-sdk
+
+SPEC CHECKSUMS:
+  dot-document: f3956d469e3de07509fdda69456f3c9183a4fe35
+  dot-face-background-uniformity: e8448a4b27aa34729d9e3a6080f072bf0f31f8f4
+  dot-face-core: d8c9cf929bebbd90b8ca77afad789220fedc4cc3
+  dot-face-detection-fast: 38579f998488263247d15f0d3354fac77deffbab
+  dot-face-eye-gaze-liveness: adb2edabefc399b876fc930f84eaa3e266d4223c
+  dot-face-passive-liveness: 478c160ea4c4412973fb514dff34675376320cd7
+  dot-face-verification: ff1e3f410ff2cefd7e594ecbdbfc7f9dea6d4c64
+  iface: ff47d41a36f6004c65d9f9a333a4b377a23b249c
+  kyc-sdk: 3d2725154cd270c229bb672eb62cbf14a912d137
+  onnx: 9154dfb152168efe0aaf8ca2867835cee4afa69d
+  sam: ff662bfee8e834b79001e95f50bd0c4ca943fa98
+
+PODFILE CHECKSUM: 4bc119c16ca0fcd42833126b4b2800f449f3f049
+
+COCOAPODS: 1.11.3

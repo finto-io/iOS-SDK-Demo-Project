@@ -1,0 +1,9 @@
+"dot.document_auto_capture.instruction.brightness_too_high" = "Less light needed";
+"dot.document_auto_capture.instruction.brightness_too_low" = "More light needed";
+"dot.document_auto_capture.instruction.candidate_selection" = "Hold still...";
+"dot.document_auto_capture.instruction.document_centering" = "Center document";
+"dot.document_auto_capture.instruction.document_not_present" = "Scan document";
+"dot.document_auto_capture.instruction.document_too_far" = "Move closer";
+"dot.document_auto_capture.instruction.hotspots_present" = "Avoid reflections";
+"dot.document_auto_capture.instruction.mrz_not_valid" = "Scan valid machine readable document";
+"dot.document_auto_capture.instruction.sharpness_too_low" = "More light needed";

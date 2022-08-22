@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12B8D9643BB62836B322B3E0 /* Pods_kyc_ios_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6071D693C0D416F6D3C61C8 /* Pods_kyc_ios_demo.framework */; };
+		4024336A3607905091183E51 /* Pods_kyc_ios_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 210061EB9CFE01641CE62754 /* Pods_kyc_ios_demoTests.framework */; };
+		8472973A28AB8EA7000C0D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472973928AB8EA7000C0D92 /* AppDelegate.swift */; };
+		8472973C28AB8EA7000C0D92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472973B28AB8EA7000C0D92 /* SceneDelegate.swift */; };
+		8472973E28AB8EA7000C0D92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472973D28AB8EA7000C0D92 /* ViewController.swift */; };
+		8472974328AB8EA8000C0D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8472974228AB8EA8000C0D92 /* Assets.xcassets */; };
+		8472974628AB8EA8000C0D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8472974428AB8EA8000C0D92 /* LaunchScreen.storyboard */; };
+		8472975128AB8EA9000C0D92 /* kyc_ios_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472975028AB8EA9000C0D92 /* kyc_ios_demoTests.swift */; };
+		8472975B28AB8EA9000C0D92 /* kyc_ios_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472975A28AB8EA9000C0D92 /* kyc_ios_demoUITests.swift */; };
+		8472975D28AB8EA9000C0D92 /* kyc_ios_demoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472975C28AB8EA9000C0D92 /* kyc_ios_demoUITestsLaunchTests.swift */; };
+		8472976C28AB93E8000C0D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8472976B28AB93E8000C0D92 /* Main.storyboard */; };
+		8472977028AD3BFE000C0D92 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8472976F28AD3BFE000C0D92 /* Localizable.strings */; };
+		8472977228AE0DB0000C0D92 /* Upload.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8472977128AE0DB0000C0D92 /* Upload.storyboard */; };
+		8472977428AE0F15000C0D92 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472977328AE0F15000C0D92 /* UploadViewController.swift */; };
+		8472977628AE1ECE000C0D92 /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8472977528AE1ECE000C0D92 /* Scanner.storyboard */; };
+		8472977828AE1EE7000C0D92 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472977728AE1EE7000C0D92 /* ScannerViewController.swift */; };
+		8472977A28AE402D000C0D92 /* iengine.lic in Resources */ = {isa = PBXBuildFile; fileRef = 8472977928AE402D000C0D92 /* iengine.lic */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8472974D28AB8EA9000C0D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8472972E28AB8EA7000C0D92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8472973528AB8EA7000C0D92;
+			remoteInfo = "kyc-ios-demo";
+		};
+		8472975728AB8EA9000C0D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8472972E28AB8EA7000C0D92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8472973528AB8EA7000C0D92;
+			remoteInfo = "kyc-ios-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0723454F451EE4C8EBEED782 /* Pods-kyc-ios-demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyc-ios-demoTests.release.xcconfig"; path = "Target Support Files/Pods-kyc-ios-demoTests/Pods-kyc-ios-demoTests.release.xcconfig"; sourceTree = "<group>"; };
+		210061EB9CFE01641CE62754 /* Pods_kyc_ios_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kyc_ios_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8472973628AB8EA7000C0D92 /* kyc-ios-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kyc-ios-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8472973928AB8EA7000C0D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8472973B28AB8EA7000C0D92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8472973D28AB8EA7000C0D92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8472974228AB8EA8000C0D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8472974528AB8EA8000C0D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8472974728AB8EA8000C0D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8472974C28AB8EA9000C0D92 /* kyc-ios-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kyc-ios-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8472975028AB8EA9000C0D92 /* kyc_ios_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kyc_ios_demoTests.swift; sourceTree = "<group>"; };
+		8472975628AB8EA9000C0D92 /* kyc-ios-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kyc-ios-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8472975A28AB8EA9000C0D92 /* kyc_ios_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kyc_ios_demoUITests.swift; sourceTree = "<group>"; };
+		8472975C28AB8EA9000C0D92 /* kyc_ios_demoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kyc_ios_demoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8472976B28AB93E8000C0D92 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8472976F28AD3BFE000C0D92 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8472977128AE0DB0000C0D92 /* Upload.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Upload.storyboard; sourceTree = "<group>"; };
+		8472977328AE0F15000C0D92 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		8472977528AE1ECE000C0D92 /* Scanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scanner.storyboard; sourceTree = "<group>"; };
+		8472977728AE1EE7000C0D92 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		8472977928AE402D000C0D92 /* iengine.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iengine.lic; sourceTree = "<group>"; };
+		9DAF1EF6C4A84D5F656BA415 /* Pods-kyc-ios-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyc-ios-demo.debug.xcconfig"; path = "Target Support Files/Pods-kyc-ios-demo/Pods-kyc-ios-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		A388DBCD94E43CF0A8A79D01 /* Pods-kyc-ios-demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyc-ios-demoTests.debug.xcconfig"; path = "Target Support Files/Pods-kyc-ios-demoTests/Pods-kyc-ios-demoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6071D693C0D416F6D3C61C8 /* Pods_kyc_ios_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kyc_ios_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD60412720884906A82EA47F /* Pods-kyc-ios-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyc-ios-demo.release.xcconfig"; path = "Target Support Files/Pods-kyc-ios-demo/Pods-kyc-ios-demo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8472973328AB8EA7000C0D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12B8D9643BB62836B322B3E0 /* Pods_kyc_ios_demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8472974928AB8EA9000C0D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4024336A3607905091183E51 /* Pods_kyc_ios_demoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8472975328AB8EA9000C0D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8472972D28AB8EA7000C0D92 = {
+			isa = PBXGroup;
+			children = (
+				8472977928AE402D000C0D92 /* iengine.lic */,
+				8472973828AB8EA7000C0D92 /* kyc-ios-demo */,
+				8472974F28AB8EA9000C0D92 /* kyc-ios-demoTests */,
+				8472975928AB8EA9000C0D92 /* kyc-ios-demoUITests */,
+				8472973728AB8EA7000C0D92 /* Products */,
+				D9DE12BD040964F0886FF0EF /* Pods */,
+				B4F2DF9DFE2D8BA84D5DDEDF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8472973728AB8EA7000C0D92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8472973628AB8EA7000C0D92 /* kyc-ios-demo.app */,
+				8472974C28AB8EA9000C0D92 /* kyc-ios-demoTests.xctest */,
+				8472975628AB8EA9000C0D92 /* kyc-ios-demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8472973828AB8EA7000C0D92 /* kyc-ios-demo */ = {
+			isa = PBXGroup;
+			children = (
+				8472973928AB8EA7000C0D92 /* AppDelegate.swift */,
+				8472973B28AB8EA7000C0D92 /* SceneDelegate.swift */,
+				8472973D28AB8EA7000C0D92 /* ViewController.swift */,
+				8472974228AB8EA8000C0D92 /* Assets.xcassets */,
+				8472974428AB8EA8000C0D92 /* LaunchScreen.storyboard */,
+				8472974728AB8EA8000C0D92 /* Info.plist */,
+				8472976B28AB93E8000C0D92 /* Main.storyboard */,
+				8472976F28AD3BFE000C0D92 /* Localizable.strings */,
+				8472977128AE0DB0000C0D92 /* Upload.storyboard */,
+				8472977328AE0F15000C0D92 /* UploadViewController.swift */,
+				8472977528AE1ECE000C0D92 /* Scanner.storyboard */,
+				8472977728AE1EE7000C0D92 /* ScannerViewController.swift */,
+			);
+			path = "kyc-ios-demo";
+			sourceTree = "<group>";
+		};
+		8472974F28AB8EA9000C0D92 /* kyc-ios-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8472975028AB8EA9000C0D92 /* kyc_ios_demoTests.swift */,
+			);
+			path = "kyc-ios-demoTests";
+			sourceTree = "<group>";
+		};
+		8472975928AB8EA9000C0D92 /* kyc-ios-demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8472975A28AB8EA9000C0D92 /* kyc_ios_demoUITests.swift */,
+				8472975C28AB8EA9000C0D92 /* kyc_ios_demoUITestsLaunchTests.swift */,
+			);
+			path = "kyc-ios-demoUITests";
+			sourceTree = "<group>";
+		};
+		B4F2DF9DFE2D8BA84D5DDEDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6071D693C0D416F6D3C61C8 /* Pods_kyc_ios_demo.framework */,
+				210061EB9CFE01641CE62754 /* Pods_kyc_ios_demoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9DE12BD040964F0886FF0EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DAF1EF6C4A84D5F656BA415 /* Pods-kyc-ios-demo.debug.xcconfig */,
+				FD60412720884906A82EA47F /* Pods-kyc-ios-demo.release.xcconfig */,
+				A388DBCD94E43CF0A8A79D01 /* Pods-kyc-ios-demoTests.debug.xcconfig */,
+				0723454F451EE4C8EBEED782 /* Pods-kyc-ios-demoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8472973528AB8EA7000C0D92 /* kyc-ios-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8472976028AB8EA9000C0D92 /* Build configuration list for PBXNativeTarget "kyc-ios-demo" */;
+			buildPhases = (
+				5BE5D6661F627AAA5C29894F /* [CP] Check Pods Manifest.lock */,
+				8472973228AB8EA7000C0D92 /* Sources */,
+				8472973328AB8EA7000C0D92 /* Frameworks */,
+				8472973428AB8EA7000C0D92 /* Resources */,
+				68D9B38D01F4DA0970107DDF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kyc-ios-demo";
+			productName = "kyc-ios-demo";
+			productReference = 8472973628AB8EA7000C0D92 /* kyc-ios-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8472974B28AB8EA9000C0D92 /* kyc-ios-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8472976328AB8EA9000C0D92 /* Build configuration list for PBXNativeTarget "kyc-ios-demoTests" */;
+			buildPhases = (
+				7D22CFFCC8669B001C65D495 /* [CP] Check Pods Manifest.lock */,
+				8472974828AB8EA9000C0D92 /* Sources */,
+				8472974928AB8EA9000C0D92 /* Frameworks */,
+				8472974A28AB8EA9000C0D92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8472974E28AB8EA9000C0D92 /* PBXTargetDependency */,
+			);
+			name = "kyc-ios-demoTests";
+			productName = "kyc-ios-demoTests";
+			productReference = 8472974C28AB8EA9000C0D92 /* kyc-ios-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8472975528AB8EA9000C0D92 /* kyc-ios-demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8472976628AB8EA9000C0D92 /* Build configuration list for PBXNativeTarget "kyc-ios-demoUITests" */;
+			buildPhases = (
+				8472975228AB8EA9000C0D92 /* Sources */,
+				8472975328AB8EA9000C0D92 /* Frameworks */,
+				8472975428AB8EA9000C0D92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8472975828AB8EA9000C0D92 /* PBXTargetDependency */,
+			);
+			name = "kyc-ios-demoUITests";
+			productName = "kyc-ios-demoUITests";
+			productReference = 8472975628AB8EA9000C0D92 /* kyc-ios-demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8472972E28AB8EA7000C0D92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					8472973528AB8EA7000C0D92 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					8472974B28AB8EA9000C0D92 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 8472973528AB8EA7000C0D92;
+					};
+					8472975528AB8EA9000C0D92 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 8472973528AB8EA7000C0D92;
+					};
+				};
+			};
+			buildConfigurationList = 8472973128AB8EA7000C0D92 /* Build configuration list for PBXProject "kyc-ios-demo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8472972D28AB8EA7000C0D92;
+			productRefGroup = 8472973728AB8EA7000C0D92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8472973528AB8EA7000C0D92 /* kyc-ios-demo */,
+				8472974B28AB8EA9000C0D92 /* kyc-ios-demoTests */,
+				8472975528AB8EA9000C0D92 /* kyc-ios-demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8472973428AB8EA7000C0D92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8472977028AD3BFE000C0D92 /* Localizable.strings in Resources */,
+				8472977228AE0DB0000C0D92 /* Upload.storyboard in Resources */,
+				8472977A28AE402D000C0D92 /* iengine.lic in Resources */,
+				8472976C28AB93E8000C0D92 /* Main.storyboard in Resources */,
+				8472974628AB8EA8000C0D92 /* LaunchScreen.storyboard in Resources */,
+				8472977628AE1ECE000C0D92 /* Scanner.storyboard in Resources */,
+				8472974328AB8EA8000C0D92 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8472974A28AB8EA9000C0D92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8472975428AB8EA9000C0D92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BE5D6661F627AAA5C29894F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kyc-ios-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68D9B38D01F4DA0970107DDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kyc-ios-demo/Pods-kyc-ios-demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kyc-ios-demo/Pods-kyc-ios-demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kyc-ios-demo/Pods-kyc-ios-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D22CFFCC8669B001C65D495 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kyc-ios-demoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8472973228AB8EA7000C0D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8472973E28AB8EA7000C0D92 /* ViewController.swift in Sources */,
+				8472977428AE0F15000C0D92 /* UploadViewController.swift in Sources */,
+				8472973A28AB8EA7000C0D92 /* AppDelegate.swift in Sources */,
+				8472977828AE1EE7000C0D92 /* ScannerViewController.swift in Sources */,
+				8472973C28AB8EA7000C0D92 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8472974828AB8EA9000C0D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8472975128AB8EA9000C0D92 /* kyc_ios_demoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8472975228AB8EA9000C0D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8472975B28AB8EA9000C0D92 /* kyc_ios_demoUITests.swift in Sources */,
+				8472975D28AB8EA9000C0D92 /* kyc_ios_demoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8472974E28AB8EA9000C0D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8472973528AB8EA7000C0D92 /* kyc-ios-demo */;
+			targetProxy = 8472974D28AB8EA9000C0D92 /* PBXContainerItemProxy */;
+		};
+		8472975828AB8EA9000C0D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8472973528AB8EA7000C0D92 /* kyc-ios-demo */;
+			targetProxy = 8472975728AB8EA9000C0D92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8472974428AB8EA8000C0D92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8472974528AB8EA8000C0D92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8472975E28AB8EA9000C0D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8472975F28AB8EA9000C0D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8472976128AB8EA9000C0D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DAF1EF6C4A84D5F656BA415 /* Pods-kyc-ios-demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3M2S48992;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "kyc-ios-demo/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = onboarding;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.kyc-sdk-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8472976228AB8EA9000C0D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD60412720884906A82EA47F /* Pods-kyc-ios-demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3M2S48992;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "kyc-ios-demo/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = onboarding;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.kyc-sdk-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8472976428AB8EA9000C0D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A388DBCD94E43CF0A8A79D01 /* Pods-kyc-ios-demoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3M2S48992;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bae.kyc-ios-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kyc-ios-demo.app/kyc-ios-demo";
+			};
+			name = Debug;
+		};
+		8472976528AB8EA9000C0D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0723454F451EE4C8EBEED782 /* Pods-kyc-ios-demoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3M2S48992;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bae.kyc-ios-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kyc-ios-demo.app/kyc-ios-demo";
+			};
+			name = Release;
+		};
+		8472976728AB8EA9000C0D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3M2S48992;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bae.kyc-ios-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "kyc-ios-demo";
+			};
+			name = Debug;
+		};
+		8472976828AB8EA9000C0D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z3M2S48992;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bae.kyc-ios-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "kyc-ios-demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8472973128AB8EA7000C0D92 /* Build configuration list for PBXProject "kyc-ios-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8472975E28AB8EA9000C0D92 /* Debug */,
+				8472975F28AB8EA9000C0D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8472976028AB8EA9000C0D92 /* Build configuration list for PBXNativeTarget "kyc-ios-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8472976128AB8EA9000C0D92 /* Debug */,
+				8472976228AB8EA9000C0D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8472976328AB8EA9000C0D92 /* Build configuration list for PBXNativeTarget "kyc-ios-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8472976428AB8EA9000C0D92 /* Debug */,
+				8472976528AB8EA9000C0D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8472976628AB8EA9000C0D92 /* Build configuration list for PBXNativeTarget "kyc-ios-demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8472976728AB8EA9000C0D92 /* Debug */,
+				8472976828AB8EA9000C0D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8472972E28AB8EA7000C0D92 /* Project object */;
+}

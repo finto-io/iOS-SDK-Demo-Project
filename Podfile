@@ -5,7 +5,7 @@ source 'https://github.com/finto-io/sdk-kyc-podspecs.git'
 
 
 target 'kyc-ios-demo' do
-  pod 'kyc-sdk'
+  pod 'kyc-sdk', '1.6.2'
 
   target 'kyc-ios-demoTests' do
     inherit! :search_paths

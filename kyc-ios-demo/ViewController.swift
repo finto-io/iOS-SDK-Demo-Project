@@ -141,17 +141,25 @@ extension ViewController:
                         
                         let storyBoard : UIStoryboard = UIStoryboard(name: "Scanner", bundle:nil)
                         let scannerViewController = storyBoard.instantiateViewController(withIdentifier: "Scanner") as! ScannerViewController
+
                         self.navigationController?.pushViewController(scannerViewController, animated: true)
+                        self.navigationController?.navigationBar.topItem?.backButtonTitle = "KYC SDK Demo"
+                       
+
                         scannerViewController.delegate = self.firstStep
                         scannerViewController.labelText = jsonString
+                        let count = self.navigationController?.viewControllers.count ?? 0
                         
+                        self.navigationController?.viewControllers.removeSubrange(1...(count - 2))
+//                        self.navigationController?.viewControllers.remove(at: 1)
+//                        self.navigationController?.viewControllers.remove(at: 2)
                     } catch {
                         print("Failed to encode JSON")
                     }
                 }
             }
             
-            self.navigationController?.popToViewController(self, animated: true)
+//            self.navigationController?.popToViewController(self, animated: true)
         }
     }
     
@@ -179,10 +187,12 @@ extension ViewController:FilePickerDelegate {
         controller.modalPresentationStyle = .fullScreen
         controller.delegate = self
         self.present(controller, animated: true)
+        self.navigationController?.pushViewController(self.uploadController, animated: true)
     }
     
     func filePickerSuccess(_ controller: FilePicker, _ urls: [URL]) {
         DispatchQueue.main.async {
+            
             self.uploadController.setLink(link: urls[0].absoluteString)
         }
         
@@ -191,7 +201,7 @@ extension ViewController:FilePickerDelegate {
     
     func filePickerUploadingStarted(_ controller: FilePicker) {
         DispatchQueue.main.async {
-            self.navigationController?.pushViewController(self.uploadController, animated: true)
+            
         }
     }
     
@@ -217,8 +227,10 @@ extension ViewController: VideoViewControllerDelegate {
     
     func videoViewRecordSuccess(_ controller: VideoViewController, _ url: String) {
         DispatchQueue.main.async {
-            self.navigationController?.popViewController(animated: false)
+            
             self.navigationController?.pushViewController(self.uploadController, animated: true)
+            self.navigationController?.navigationBar.topItem?.backButtonTitle = "KYC SDK Demo"
+            self.navigationController?.viewControllers.remove(at: 1)
             self.uploadController.setLink(link: url)
             
         }

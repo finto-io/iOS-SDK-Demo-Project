@@ -33,7 +33,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="Rzd-gP-hZG"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="0lo-x4-Bgk">
-                                <rect key="frame" x="113" y="650" width="189" height="38"/>
+                                <rect key="frame" x="113" y="824" width="189" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <size key="titleShadowOffset" width="3" height="4"/>

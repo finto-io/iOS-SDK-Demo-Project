@@ -15,7 +15,7 @@ PODS:
     - dot-face-core (= 4.10.0)
   - iface (4.18.3):
     - onnx (= 1.0.0)
-  - kyc-sdk (1.6.1):
+  - kyc-sdk (1.6.2):
     - dot-document (= 3.3.4)
     - dot-face-background-uniformity (= 4.10.0)
     - dot-face-detection-fast (= 4.10.0)
@@ -26,9 +26,11 @@ PODS:
   - sam (2.2.0)
 
 DEPENDENCIES:
-  - kyc-sdk (>= 1.6.1)
+  - kyc-sdk (= 1.6.2)
 
 SPEC REPOS:
+  https://github.com/finto-io/sdk-kyc-podspecs.git:
+    - kyc-sdk
   https://github.com/innovatrics/innovatrics-podspecs:
     - dot-document
     - dot-face-background-uniformity
@@ -40,8 +42,6 @@ SPEC REPOS:
     - iface
     - onnx
     - sam
-  https://github.com/vladyslav-shkoda/sdk-kyc-podspecs.git:
-    - kyc-sdk
 
 SPEC CHECKSUMS:
   dot-document: f3956d469e3de07509fdda69456f3c9183a4fe35
@@ -52,10 +52,10 @@ SPEC CHECKSUMS:
   dot-face-passive-liveness: 478c160ea4c4412973fb514dff34675376320cd7
   dot-face-verification: ff1e3f410ff2cefd7e594ecbdbfc7f9dea6d4c64
   iface: ff47d41a36f6004c65d9f9a333a4b377a23b249c
-  kyc-sdk: 3d2725154cd270c229bb672eb62cbf14a912d137
+  kyc-sdk: 5c1d79709a4e23511bc63241cf195d76b06037e3
   onnx: 9154dfb152168efe0aaf8ca2867835cee4afa69d
   sam: ff662bfee8e834b79001e95f50bd0c4ca943fa98
 
-PODFILE CHECKSUM: 4bc119c16ca0fcd42833126b4b2800f449f3f049
+PODFILE CHECKSUM: 2af076c52eb71866654ddf4f7ab5c2d7feb1e867
 
 COCOAPODS: 1.11.3

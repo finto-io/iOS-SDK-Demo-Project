@@ -7,7 +7,7 @@
 //
 import UIKit
 import kyc_sdk
-import MobileCoreServices
+//import MobileCoreServces
 import DotDocument
 import UniformTypeIdentifiers
 import AVFoundation
@@ -20,11 +20,12 @@ class ViewController: UIViewController {
     
     
     var uploadController: UploadViewController!
-    
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isTranslucent = true
+    }
     var ob:Onboarding?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         navigationItem.title = "KYC SDK Demo"
         let storyBoard : UIStoryboard = UIStoryboard(name: "Upload", bundle:nil)
         
@@ -192,7 +193,6 @@ extension ViewController:FilePickerDelegate {
     
     func filePickerSuccess(_ controller: FilePicker, _ urls: [URL]) {
         DispatchQueue.main.async {
-            
             self.uploadController.setLink(link: urls[0].absoluteString)
         }
         
@@ -218,10 +218,10 @@ extension ViewController: VideoViewControllerDelegate {
     @IBAction func onRecordVideoPress(_ sender: Any) {
         let controller = VideoViewController()
         controller.delegate = self
-        
         controller.navigationItem.title =  "Please hold the button for 5 seconds"
-        
         self.navigationController?.pushViewController(controller, animated: true)
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.isTranslucent = false
     }
     
     

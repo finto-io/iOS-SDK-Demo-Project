@@ -1,24 +1,13 @@
-//
-//  ViewController.swift
-//  kyc
-//
-//  Created by 96574894 on 05/20/2022.
-//  Copyright (c) 2022 96574894. All rights reserved.
-//
+
 import UIKit
 import kyc_sdk
-//import MobileCoreServces
 import DotDocument
 import UniformTypeIdentifiers
 import AVFoundation
 
 
-
-
-
 class ViewController: UIViewController {
-    
-    
+
     var uploadController: UploadViewController!
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.isTranslucent = true
@@ -42,7 +31,6 @@ class ViewController: UIViewController {
             }
         }
     }
-    
 }
 
 
@@ -94,7 +82,7 @@ extension ViewController:
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }
-    func documentScanFrontFailed(_ controller: DocumentScanFrontViewController, error: DocumentError) {
+    func documentScanFrontFailed(_ controller: DocumentScanFrontViewController,_ error: BaeError) {
         DispatchQueue.main.async {
             controller.restart()
         }
@@ -110,25 +98,17 @@ extension ViewController:
             
         }
     }
-    func documentScanBackFailed(_ controller: DocumentScanBackViewController, error: DocumentError) {
+    func documentScanBackFailed(_ controller: DocumentScanBackViewController,_ error: BaeError) {
         DispatchQueue.main.async {
-            if error.code == "NO_CORNERS" {
-                controller.restart()
-                return
-            }
-            if error.code == "PAGE_DOESNT_MATCH_DOCUMENT_TYPE_OF_PREVIOUS_PAGE" {
-                
-                let controller = DocumentScanFrontViewController()
-                controller.delegate = self
-                
-            }
+            controller.restart()
+            return
         }
     }
     
     func selfieAutoCaptureSuccess(_ controller: SelfieAutoCaptureViewController) {
         
         DispatchQueue.main.async {
-            self.ob?.inspectDocument(){ res in
+            self.ob?.inspectDocument(){ res, err in
                 
                 DispatchQueue.main.async {
                     
@@ -152,29 +132,20 @@ extension ViewController:
                         let count = self.navigationController?.viewControllers.count ?? 0
                         
                         self.navigationController?.viewControllers.removeSubrange(1...(count - 2))
-//                        self.navigationController?.viewControllers.remove(at: 1)
-//                        self.navigationController?.viewControllers.remove(at: 2)
                     } catch {
                         print("Failed to encode JSON")
                     }
                 }
             }
-            
-//            self.navigationController?.popToViewController(self, animated: true)
         }
     }
     
-    func selfieAutoCaptureFailed(_ controller: SelfieAutoCaptureViewController, error: SelfieError) {
+    func selfieAutoCaptureFailed(_ controller: SelfieAutoCaptureViewController,_ error: BaeError) {
         DispatchQueue.main.async {
-            if error.code == .noFaceFound {
-                controller.restart()
-                return
-            }
-            self.selfieAutoCaptureSuccess(controller)
+            controller.restart()
+            return
         }
     }
-    
-    
 }
 
 extension ViewController:FilePickerDelegate {
@@ -183,6 +154,14 @@ extension ViewController:FilePickerDelegate {
     @IBAction func pressUpload(_ sender: UIButton) {
         let types:  [UTType] = [
             UTType.image,
+            UTType(filenameExtension: "pdf")!,
+            UTType(filenameExtension: "jpg")!,
+            UTType(filenameExtension: "jpeg")!,
+            UTType(filenameExtension: "png")!,
+            UTType(filenameExtension: "doc")!,
+            UTType(filenameExtension: "docx")!,
+            UTType(filenameExtension: "csv")!,
+            
         ]
         let controller = FilePicker(documentTypes: types)
         controller.modalPresentationStyle = .fullScreen
@@ -194,8 +173,8 @@ extension ViewController:FilePickerDelegate {
     func filePickerSuccess(_ controller: FilePicker, _ urls: [URL]) {
         DispatchQueue.main.async {
             self.uploadController.setLink(link: urls[0].absoluteString)
+            print(urls)
         }
-        
     }
     
     
@@ -206,7 +185,7 @@ extension ViewController:FilePickerDelegate {
     }
     
     
-    func filePickerFailed(_ controller: FilePicker, error: FilePickerError) {
+    func filePickerFailed(_ controller: FilePicker, error: BaeError) {
         DispatchQueue.main.async {
             self.uploadController?.label.text = error.localizedDescription
         }
@@ -214,14 +193,16 @@ extension ViewController:FilePickerDelegate {
 }
 
 extension ViewController: VideoViewControllerDelegate {
+    func videoViewRecordFailed(_ controller: kyc_sdk.VideoViewController, _ error: kyc_sdk.BaeError) {}
+    
     
     @IBAction func onRecordVideoPress(_ sender: Any) {
         let controller = VideoViewController()
         controller.delegate = self
         controller.navigationItem.title =  "Please hold the button for 5 seconds"
+        
         self.navigationController?.pushViewController(controller, animated: true)
         navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.isTranslucent = false
     }
     
     
@@ -235,7 +216,7 @@ extension ViewController: VideoViewControllerDelegate {
             
         }
     }
-    func videoViewRecordFailed(_ controller: VideoViewController, error: Error) {}
+  
 }
 
 extension UIColor {

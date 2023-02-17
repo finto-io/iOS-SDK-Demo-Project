@@ -1,4 +1,5 @@
 import UniformTypeIdentifiers
+import UIKit
 
 let FILE_TYPES:  [UTType] = [
     UTType.image,
@@ -10,3 +11,6 @@ let FILE_TYPES:  [UTType] = [
     UTType(filenameExtension: "docx")!,
     UTType(filenameExtension: "csv")!,
 ]
+
+
+let ACCENT_COLOR: UIColor = UIColor(red:250, green: 100 , blue: 40)

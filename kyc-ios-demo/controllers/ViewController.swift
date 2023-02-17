@@ -29,11 +29,11 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+
     func setNavigationItem() {
+        guard let statusBar = UIApplication.shared.statusBarUIView else { return }
+        statusBar.backgroundColor = ACCENT_COLOR
         navigationItem.title = "KYC SDK Demo"
-        navigationController?.navigationBar.tintColor = UIColor(red:0x32, green: 0x90 , blue: 0xff)
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(red:0x32, green: 0x90 , blue: 0xff)]
     }
     
     @IBAction func pressUpload(_ sender: UIButton) {
@@ -170,9 +170,8 @@ extension ViewController: VideoViewControllerDelegate {
         DispatchQueue.main.async {
             let controller = VideoViewController()
             controller.delegate = self
-            controller.navigationItem.title = "Please hold the button for 5 seconds"
+            controller.navigationItem.title = "Hold the button for 5 seconds"
             self.navigationController?.pushViewController(controller, animated: true)
-            self.navigationController?.navigationBar.barStyle = .black
         }
     }
     

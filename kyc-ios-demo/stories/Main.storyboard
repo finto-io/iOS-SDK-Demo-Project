@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fh0-oO-Cdu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fh0-oO-Cdu">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,21 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2WG-Ok-6sk">
-                                <rect key="frame" x="0.0" y="148" width="390" height="160"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2WG-Ok-6sk">
+                                <rect key="frame" x="16" y="337" width="358" height="176"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wZO-Hv-vrf" userLabel="Upload Documents">
-                                        <rect key="frame" x="95" y="0.0" width="200" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="48"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="nQ7-WP-kWE"/>
-                                            <constraint firstAttribute="height" constant="40" id="u1W-Mp-FdR"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="1gD-Z1-xAJ"/>
                                         </constraints>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <size key="titleShadowOffset" width="3" height="4"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" cornerStyle="dynamic" buttonSize="large" titleAlignment="automatic">
-                                            <backgroundConfiguration key="background" cornerRadius="8">
-                                                <color key="backgroundColor" red="0.94253069160000003" green="0.52580532369999999" blue="0.24122723560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                <color key="backgroundColor" name="AccentColor"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Upload Documents ">
@@ -44,21 +45,20 @@
                                             <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="pressUpload:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qhb-J9-YYy"/>
+                                            <action selector="pressUpload:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="x0A-y8-fB5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="PFo-rj-ZIs">
-                                        <rect key="frame" x="95" y="60" width="200" height="40"/>
+                                        <rect key="frame" x="0.0" y="64" width="358" height="48"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="JqI-mM-KFE"/>
-                                            <constraint firstAttribute="width" constant="200" id="kie-fg-5yj"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="48" id="vHF-iX-6eh"/>
                                         </constraints>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <size key="titleShadowOffset" width="3" height="4"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" cornerStyle="dynamic" buttonSize="large" titleAlignment="center">
-                                            <backgroundConfiguration key="background" cornerRadius="8">
-                                                <color key="backgroundColor" red="0.94253069160000003" green="0.52580532369999999" blue="0.24122723560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                <color key="backgroundColor" name="AccentColor"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Scan Documents">
@@ -75,18 +75,13 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7KM-M9-7lo">
-                                        <rect key="frame" x="95" y="120" width="200" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="2nv-4a-CQb"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="nRG-Sj-jfn"/>
-                                            <constraint firstAttribute="height" constant="40" id="ooH-Oz-JPL"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="128" width="358" height="48"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <size key="titleShadowOffset" width="3" height="4"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" cornerStyle="dynamic" buttonSize="large" titleAlignment="center">
-                                            <backgroundConfiguration key="background" cornerRadius="8">
-                                                <color key="backgroundColor" red="0.94253069160000003" green="0.52580532369999999" blue="0.24122723560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                <color key="backgroundColor" name="AccentColor"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Record Video">
@@ -108,12 +103,15 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2WG-Ok-6sk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="A1F-Cg-gzi"/>
-                            <constraint firstItem="2WG-Ok-6sk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="60" id="Cdr-Z5-fhk"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2WG-Ok-6sk" secondAttribute="trailing" id="HfP-D8-wgl"/>
+                            <constraint firstItem="2WG-Ok-6sk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="246" id="0vs-Uk-GCm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2WG-Ok-6sk" secondAttribute="trailing" constant="16" id="Ftg-hi-xbs"/>
+                            <constraint firstItem="2WG-Ok-6sk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="Pth-HM-50h"/>
+                            <constraint firstItem="2WG-Ok-6sk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="QsV-c5-zF0"/>
+                            <constraint firstItem="2WG-Ok-6sk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="YR7-Br-y1Z"/>
+                            <constraint firstItem="2WG-Ok-6sk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="uWU-JE-oKo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="F4F-XP-Fb1"/>
+                    <navigationItem key="navigationItem" id="GnB-Og-5OZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,7 +123,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fh0-oO-Cdu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WGC-yI-99E">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -139,8 +137,11 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.98039215803146362" green="0.39215683937072754" blue="0.15686275064945221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

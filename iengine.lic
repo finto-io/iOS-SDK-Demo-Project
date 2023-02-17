@@ -3,12 +3,12 @@
     "contract": {
         "customer": "finto",
         "expiration": {
-            "day": 2,
+            "day": 7,
             "month": 12,
-            "year": 2022
+            "year": 2023
         },
         "hwids": [
-            "Apsh8svsn3/3xyID"
+            "I771424909714145"
         ],
         "products": [
             "iface"
@@ -16,7 +16,19 @@
         "idkit": {
             "database_size": 0,
             "max_client_connections": 0
+        },
+        "dot": {
+            "authentication": {
+                "apiKeyAndSecrets": [
+                    {
+                        "key": "finto",
+                        "secret": "TiI1vmZDtAVHceNnh0RpJ9YgU3f8OrGa",
+                        "valid_from": "2022-12-07",
+                        "valid_to": "2023-12-07"
+                    }
+                ]
+            }
         }
     },
-    "contract_signature": "IYH0xPyURkmORyWlPHAeL7/KtYE54HQ19wTRi1MWJZD8g/Z5M6i6vqUfioDIdzq1LgeIFrmqybEZ+niKuZ1nLMr++bJXXheeFMY7QWcdqIfwQbIFrnVCmEl/sEa/kRoh0zfkL0Adthl2efQpwSlakTxBAGRn5d6S3skjYrOv2G0="
+    "contract_signature": "gTefLcTaY/vph70giWrEN0XFxV3B1eFqzd6Cm3hr+bz9ioPKZEeFPwB/AFtOmSTEtcM+gnokBgolU9+zHU2nrRe/irQqS7zGs2kaHgVGEvw1BCbWOU0/F6klgZjnoaJtStPYaUH5FCPVn8Z2bKCtkGJiLxNUTH8ocHrB5MRRdlk="
 }

@@ -172,6 +172,10 @@ extension ViewController: VideoViewControllerDelegate {
             controller.delegate = self
             controller.navigationItem.title = "Hold the button for 5 seconds"
             self.navigationController?.pushViewController(controller, animated: true)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                guard let holdButton = controller.button else { return }
+                holdButton.backgroundColor = ACCENT_COLOR
+            }
         }
     }
     

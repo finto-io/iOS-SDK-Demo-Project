@@ -1,7 +1,8 @@
 use_frameworks!
 platform :ios, '11.0'
 source 'https://github.com/innovatrics/innovatrics-podspecs'
-source 'ssh://git@github.com:finto-io/sdk-kyc-podspecs.git'
+source 'git@github.com:finto-io/sdk-kyc-podspecs.git'
+
 
 
 # path="https://BankalEtihad:TOKEN@github.com/BankalEtihad/sdk-kyc-iOS.git"

@@ -12,10 +12,6 @@ class ViewController: UIViewController {
     var ob: Onboarding?
     var spinnerVC = SpinnerViewController()
     
-    override func viewDidAppear(_ animated: Bool) {
-        navigationController?.navigationBar.isTranslucent = true
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationItem()

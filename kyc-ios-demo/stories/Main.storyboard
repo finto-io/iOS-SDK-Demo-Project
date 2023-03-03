@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="ViewController" customModule="kyc_ios_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="753"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2WG-Ok-6sk">
-                                <rect key="frame" x="16" y="337" width="358" height="176"/>
+                                <rect key="frame" x="16" y="246" width="358" height="176"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wZO-Hv-vrf" userLabel="Upload Documents">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="48"/>
@@ -103,12 +103,9 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2WG-Ok-6sk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="246" id="0vs-Uk-GCm"/>
+                            <constraint firstItem="2WG-Ok-6sk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="246" id="3JK-QM-EO2"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2WG-Ok-6sk" secondAttribute="trailing" constant="16" id="Ftg-hi-xbs"/>
-                            <constraint firstItem="2WG-Ok-6sk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="Pth-HM-50h"/>
-                            <constraint firstItem="2WG-Ok-6sk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="QsV-c5-zF0"/>
                             <constraint firstItem="2WG-Ok-6sk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="YR7-Br-y1Z"/>
-                            <constraint firstItem="2WG-Ok-6sk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="uWU-JE-oKo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GnB-Og-5OZ"/>
@@ -122,11 +119,12 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fh0-oO-Cdu" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WGC-yI-99E">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="WGC-yI-99E">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="AccentColor"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>

@@ -11,8 +11,8 @@ class ScannerResultViewController: UIViewController {
     
     override func viewDidLoad() {
         self.scanInfoView.text = ""
-        setImages()
         setInfoData()
+        setImages()
     }
     
     private func setImages() {

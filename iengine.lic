@@ -1,22 +1,27 @@
 {
     "version": "2.1",
     "contract": {
-        "customer": "finto",
+        "customer": "finto_Banki",
         "expiration": {
-            "day": 2,
-            "month": 12,
-            "year": 2022
+            "day": 26,
+            "month": 3,
+            "year": 2024
         },
         "hwids": [
             "Apsh8svsn3/3xyID"
         ],
         "products": [
-            "iface"
+            "idkit",
+            "ansi_iso",
+            "afis_standard_speed",
+            "segmentation",
+            "iface",
+            "afis_premium_speed"
         ],
         "idkit": {
             "database_size": 0,
             "max_client_connections": 0
         }
     },
-    "contract_signature": "IYH0xPyURkmORyWlPHAeL7/KtYE54HQ19wTRi1MWJZD8g/Z5M6i6vqUfioDIdzq1LgeIFrmqybEZ+niKuZ1nLMr++bJXXheeFMY7QWcdqIfwQbIFrnVCmEl/sEa/kRoh0zfkL0Adthl2efQpwSlakTxBAGRn5d6S3skjYrOv2G0="
+    "contract_signature": "bbIULJLAUSi/O6/dS27Se082yF5jKctNsmhxfkJ7WkizDcWTTHOeRjtE3KfOYznoyFzX632Yw9DflUnBQYuv2TDhmKBM5cwY5YzFuohPk3quXCnhVBUe/gOHQx3owoB5uFf4Gl8TyFMDP6e9VoDyA9T1U1XOd4zTEpArdM2opl4="
 }

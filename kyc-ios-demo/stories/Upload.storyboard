@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Upload View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Upload" id="Y6W-OH-hqX" customClass="UploadViewController" customModule="kyc_ios_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="UploadViewCont">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="bottom" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cyn-KW-Twn">
+                                <rect key="frame" x="16" y="64" width="382" height="798"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAX-Zz-lLN">
+                                        <rect key="frame" x="0.5" y="0.0" width="381" height="172"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">https://bae-dev-backendless-docs.s3.eu-west-2.amazonaws.com/onboarding/202208/1661171946.8699.HEIC?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJF7RXB2BDPWVDMFA%2F20220822%2Feu-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220822T123917Z&amp;X-Amz-Expires=604800&amp;X-Amz-Signature=b4923390690ce3e35fb48d5079629676f23b31bd2f01f2889bd6abb3dfcd18e9&amp;X-Amz-SignedHeaders=host</string>
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="16"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AF9-S0-wzp">
+                                        <rect key="frame" x="0.0" y="750" width="382" height="48"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snl-g1-oSP">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="48"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Upload">
+                                                    <backgroundConfiguration key="background" cornerRadius="0.0"/>
+                                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onUploadPress:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nki-yi-kpx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="txa-d2-ev0">
+                                                <rect key="frame" x="191" y="0.0" width="191" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="Qrl-eQ-WId"/>
+                                                </constraints>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <size key="titleShadowOffset" width="3" height="4"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" cornerStyle="dynamic" buttonSize="large" titleAlignment="center">
+                                                    <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                    </backgroundConfiguration>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Open Link">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="16" name="Helvetica-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="openLink:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="84X-wH-JeL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="AF9-S0-wzp" secondAttribute="trailing" id="5n0-hd-wN6"/>
+                                    <constraint firstItem="AF9-S0-wzp" firstAttribute="leading" secondItem="Cyn-KW-Twn" secondAttribute="leading" id="cAz-cF-Lyz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cyn-KW-Twn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="Mtk-vW-fFS"/>
+                            <constraint firstItem="Cyn-KW-Twn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="bxv-Qf-rRv"/>
+                            <constraint firstAttribute="trailing" secondItem="Cyn-KW-Twn" secondAttribute="trailing" constant="16" id="hjX-Sa-VQP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Cyn-KW-Twn" secondAttribute="bottom" id="qZB-9t-ZWc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="VAX-Zz-lLN" id="Uu1-FH-Hhf"/>
+                        <outlet property="openLinkButton" destination="txa-d2-ev0" id="gf2-BZ-hdp"/>
+                        <outlet property="uploadButton" destination="snl-g1-oSP" id="1uN-sU-hq9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.608695652173921" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.98039215803146362" green="0.39215683937072754" blue="0.15686275064945221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

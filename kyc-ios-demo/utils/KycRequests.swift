@@ -3,7 +3,7 @@ import kyc_sdk
 
 class KycRequests {
 
-    static func getSimilarity(cb: @escaping (_ value: Double) -> Void) {
+    static func getSimilarity(cb: @escaping (_ value: Bool) -> Void) {
         KYC_API.similarity { data, error in
             if let baeError = error {
                 showAlert(title: "Can't get similarity value", message: baeError.message)

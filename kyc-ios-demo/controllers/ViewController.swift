@@ -5,7 +5,7 @@ import UniformTypeIdentifiers
 import AVFoundation
 
 let URL_STR = "https://bl4-dev-02.baelab.net/api/BAF3E974-52AA-7598-FF04-56945EF93500/48EE4790-8AEF-FEA5-FFB6-202374C61700"
-let KYC_API = Api(URL(string: URL_STR))
+let KYC_API = Api()
 let SIMILARITY_EDGE = 0.7
 
 class ViewController: UIViewController {
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         if let url = Bundle.main.url(forResource: "iengine", withExtension: "lic") {
             do {
                 let license = try Data(contentsOf: url)
-                ob = Onboarding(license:license, baseURL: URL(string: URL_STR)!)
+                ob = Onboarding(license:license)
                 ob?.initialize()
             } catch {
                 return
@@ -41,12 +41,13 @@ class ViewController: UIViewController {
 }
 
 
+
 extension ViewController:
     DocumentScanFrontViewControllerDelegate,
     DocumentScanBackViewControllerDelegate,
     SelfieAutoCaptureViewControllerDelegate
 {
-    @IBAction func press(_ sender: UIButton) {
+    @IBAction func press(_ sender: UIButton) {     
         let status = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
         if status == AVAuthorizationStatus.authorized {
             firstStep()
@@ -120,7 +121,7 @@ extension ViewController:
         self.ob?.inspectDocument(){ res, err in
             KycRequests.getSimilarity { value in
                 self.spinnerVC.disappear()
-                if (value < SIMILARITY_EDGE) {
+                if (value) {
                     self.navigateToSimilarity()
                 } else {
                     self.navigateToResult()

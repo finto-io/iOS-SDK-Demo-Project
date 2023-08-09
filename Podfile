@@ -7,9 +7,4 @@ source 'https://github.com/innovatrics/innovatrics-podspecs'
 
 target 'kyc-ios-demo' do
   pod 'kyc-sdk', :git => 'git@github.com:BankalEtihad/sdk-kyc-iOS.git'
-
-  target 'kyc-ios-demoTests' do
-    inherit! :search_paths
-
-  end
 end
